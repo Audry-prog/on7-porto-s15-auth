@@ -18,7 +18,7 @@ let db = mongoose.connection;
 // Captura de erro ou sucesso na conexão
 db.on("error", console.log.bind(console, "connection error:"))
 db.once("open", function (){
-  console.log("conexão feita com sucesso.")
+  console.log("Conexão feita com sucesso.")
 })
 
 //rotas
