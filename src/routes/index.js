@@ -1,4 +1,3 @@
-  
 const express = require("express")
 const router = express.Router()
 
@@ -7,6 +6,6 @@ router.get("/", function (req, res) {
     title: "Reprograma - On7 Backend - ToDo List",
     version: "1.0.0"
   })
-})
+});
 
-module.exports = router
+module.exports = router;

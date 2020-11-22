@@ -1,8 +1,8 @@
 require('dotenv-safe').config();
 
-const express = require("express")
-const bodyParser = require("body-parser")
-const mongoose = require("mongoose")
+const express = require("express");
+const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
 
 const app = express()
 
@@ -39,8 +39,8 @@ app.use(function (req, res, next) {
     next()
   })
 
-app.use("/", index)
-app.use("/tarefas", tarefas)
-app.use("/colaboradoras", colaboradoras)
+app.use("/", index);
+app.use("/tarefas", tarefas);
+app.use("/colaboradoras", colaboradoras);
 
-module.exports = app
+module.exports = app;
