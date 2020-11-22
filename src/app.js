@@ -4,7 +4,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
-const app = express()
+const app = express();
 
 //String de conexão
 mongoose.connect(process.env.MONGODB_URL, {
@@ -37,7 +37,7 @@ app.use(function (req, res, next) {
     "Origin, X-Requested-With, Content-Type, Accept"
     )
     next()
-  })
+  });
 
 app.use("/", index);
 app.use("/tarefas", tarefas);
